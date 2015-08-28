@@ -1,0 +1,420 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:id="@+id/warranty">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_bg_black"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/darkBlueBarTop"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/amsvansLogo"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#184f90"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/amsvansLogo"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/ams_white_transparent" />
+
+        <TextView
+            android:id="@+id/warranty_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/darkBlueBarTop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="WARRANTY DEPARTMENT"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#184f90"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/customerInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/warranty_department"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="CUSTOMER INFORMATION:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customerInfo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="NAME:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#006B87"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="220sp"
+            android:layout_height="38sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/customerInfo"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapSentences"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="PHONE:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#006B87"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/phoneInput"
+            android:layout_width="220sp"
+            android:layout_height="38sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/nameInput"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:typeface="normal"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="EMAIL:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#006B87"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="220sp"
+            android:layout_height="38sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/phoneInput"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:typeface="normal"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/cityState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="CITY, STATE:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#006B87"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/cityStateInput"
+            android:layout_width="220sp"
+            android:layout_height="38sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/emailInput"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapWords"
+            android:singleLine="true"
+            android:typeface="normal"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/vehicleinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cityState"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="VEHICLE INFORMATION:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/vehYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehicleinfo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="YEAR:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#006B87"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehicleinfo"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_alignEnd="@+id/cityStateInput"
+            android:layout_alignBottom="@+id/vehYear" />
+
+        <TextView
+            android:id="@+id/vehModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehYear"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="MODEL:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#006B87"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehYear"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_alignEnd="@+id/cityStateInput"
+            android:layout_above="@+id/vehVin" />
+
+        <TextView
+            android:id="@+id/vehVin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehModel"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="VIN:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#006B87"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/vehVinInput"
+            android:layout_width="220sp"
+            android:layout_height="38sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/spinner2"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text|textCapSentences"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:typeface="normal"
+            android:textColorHint="@color/hint_foreground_material_light"
+            android:hint="    Last 6 Digits Only"/>
+
+        <TextView
+            android:id="@+id/vehMileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehVin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="MILEAGE:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#006B87"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/vehMileageInput"
+            android:layout_width="220sp"
+            android:layout_height="38sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/vehVinInput"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:typeface="normal"
+            android:textColorHint="@color/hint_foreground_material_light"
+            android:hint="  Enter Current Mileage"/>
+
+        <TextView
+            android:id="@+id/imageDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehMileageInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="CLICK ICON BELOW TO TAKE PICTURE:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+
+        <TableLayout
+            android:layout_width="35dp"
+            android:layout_height="200dp"
+            android:id="@+id/previewTable"
+            android:elevation="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="fill_horizontal|center_vertical"
+            android:layout_below="@+id/imageDescription"
+            android:layout_alignStart="@+id/amsvansLogo"
+            android:layout_alignEnd="@+id/amsvansLogo">
+
+            <TableRow android:padding="5dp">
+
+                <Button
+                    android:id="@+id/captureImage1"
+                    android:layout_width="175dp"
+                    android:layout_height="95dp"
+                    android:background="@drawable/camera_icon"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:typeface="normal"
+                    android:onClick="captureImage1"
+                    android:layout_weight="1" />
+
+
+
+                <Button
+                    android:id="@+id/captureImage2"
+                    android:layout_width="175dp"
+                    android:layout_height="95dp"
+                    android:background="@drawable/camera_icon"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="captureImage2"
+                    android:layout_column="6" />
+
+            </TableRow>
+
+            <TableRow android:padding="1dp">
+
+                <Button
+                    android:id="@+id/captureImage3"
+                    android:layout_width="175dp"
+                    android:layout_height="95dp"
+                    android:onClick="captureImage3"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/camera_icon" />
+
+                <Button
+                    android:id="@+id/captureImage4"
+                    android:layout_width="175dp"
+                    android:layout_height="95dp"
+                    android:background="@drawable/camera_icon"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="captureImage4"
+                    android:layout_column="6" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/problemDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/previewTable"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="DESCRIBE PROBLEM:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+
+
+        <EditText
+            android:id="@+id/problemDescriptionInput"
+            android:layout_width="35sp"
+            android:layout_height="140sp"
+            android:layout_below="@+id/problemDescription"
+            android:layout_alignStart="@+id/amsvansLogo"
+            android:layout_alignEnd="@+id/amsvansLogo"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
+            android:minLines="6"
+            android:maxLines="10"
+            android:gravity="top|left"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:typeface="normal"
+            android:textColorHint="@color/hint_foreground_material_light"
+            android:hint="" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="110sp"
+            android:layout_height="38sp"
+            android:text="Submit"
+            android:onClick="submitButton"
+            android:singleLine="true"
+            android:layout_below="@+id/problemDescriptionInput"
+            android:layout_alignEnd="@+id/customerInfo" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="110sp"
+            android:layout_height="38sp"
+            android:text="Back"
+            android:onClick="backButton"
+            android:singleLine="true"
+            android:layout_below="@+id/problemDescriptionInput"
+            android:layout_alignStart="@+id/warranty_department" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

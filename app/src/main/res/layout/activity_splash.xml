@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75696b">
+
+
+    <TextView
+        android:id="@+id/darkBlueBarTop"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#184f90"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/amsvansLogo"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/ams_white_transparent" />
+
+
+    <ImageView
+        android:background="@drawable/warranty_department3"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/warranty_department"
+        android:onClick="warranty"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/amsvansLogo"
+        android:layout_alignStart="@+id/service_department" />
+
+    <ImageView
+        android:background="@drawable/service_department3"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/service_department"
+        android:onClick="service"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/warranty_department"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout>
